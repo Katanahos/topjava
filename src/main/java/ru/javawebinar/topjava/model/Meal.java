@@ -48,7 +48,19 @@ public class Meal {
         this.id = id;
     }
 
-    public boolean isNew(){
-        return id==null;
+
+
+    public boolean isNew() {
+        return id == null;
+    }
+
+    @Override
+    public String toString() {
+        return "Meal{" +
+                "id=" + id +
+                ", dateTime=" + dateTime +
+                ", description='" + description + '\'' +
+                ", calories=" + calories +
+                '}';
     }
 }
