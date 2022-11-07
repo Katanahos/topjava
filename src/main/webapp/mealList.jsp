@@ -26,7 +26,7 @@
                 </tr>
             </thead>
             <c:forEach items = "${mealList}" var="meal">
-                <jsp:useBean id="meal" scope="page" type="ru.javawebinar.topjava.model.MealTo"/>
+                <jsp:useBean id="meal" scope="page" type="ru.javawebinar.topjava.to.MealTo"/>
                 <tr class="${meal.excess ? 'excess' : 'normal'}">
                     <td>
                         <%=TimeUtil.toString(meal.getDateTime())%>
