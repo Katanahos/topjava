@@ -4,24 +4,7 @@
 <html>
 <head>
     <title>Meal</title>
-    <style>
-        dl {
-            background: none repeat scroll 0 0 #FAFAFA;
-            margin: 8px 0;
-            padding: 0;
-        }
-
-        dt {
-            display: inline-block;
-            width: 170px;
-        }
-
-        dd {
-            display: inline-block;
-            margin-left: 8px;
-            vertical-align: top;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <section>
@@ -30,7 +13,7 @@
     <h2>${param.action == 'create' ? 'Create meal' : 'Edit meal'}</h2>
     <jsp:useBean id="meal" type="ru.javawebinar.topjava.model.Meal" scope="request"/>
     <form method="post" action="meals">
-        <input type="hidden" name="id" value="${meal.id}" >
+        <input type="hidden" name="id" value="${meal.id}">
         <dl>
             <dt>DateTime:</dt>
             <dd><input type="datetime-local" value="${meal.dateTime}" name="dateTime" required></dd>
