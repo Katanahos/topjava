@@ -12,6 +12,7 @@ Java Enterprise Online Project
 
     Старинная китайская поговорка
 
+
 ## <a href="description.md">Описание и план проекта</a>
 ### <a href="http://topjava.herokuapp.com/" target=_blank>Демо разрабатываемого приложения</a>
 ### [Изменения проекта (Release Notes)](ReleaseNotes.md)
